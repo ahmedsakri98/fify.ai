@@ -1,0 +1,259 @@
+@import 'fonts.less';
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fify-cont {
+    margin: 0 auto;
+    width: 100%;
+    .gradient {
+        background: url("imgs/gradient.png");
+        background-repeat: repeat-x;
+        width: 100%;
+        background-size: contain;
+        .cloud-part {
+            background: url("imgs/clouds.png");
+            text-align: center;
+            background-position: 0px 0px;
+            background-attachment: fixed;
+            animation: animated-background 500s linear infinite;
+            .fify-img {
+                width: 100%;
+                max-width: 300px;
+                display: block;
+                margin: 0 auto;
+                @media (max-width: 480px) {
+                    max-width: 200px;
+                }
+            }
+            .txt-portion {
+                padding: 0 0 40px 0;
+                .fify-txt {
+                    font-size: 46px;
+                    .Montserrat-Bold;
+                    color: #c7f698;
+                    margin: 10px 0;
+                    @media (max-width: 480px) {
+                        font-size: 36px;
+                    }
+                }
+                .bold-txt {
+                    font-size: 41px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    .Montserrat-Bold;
+                    margin: 10px;
+                    @media (max-width: 480px) {
+                        font-size: 22px;
+                    }
+                }
+                .fashion-txt {
+                    font-size: 30px;
+                    color: #fff;
+                    .Montserrat-Light;
+                    margin: 10px 0 20px 0;
+                    @media (max-width: 480px) {
+                        font-size: 20px;
+                    }
+                    &.from {
+                        font-size: 18px;
+                        margin: 0 0 10px 0;
+                    }
+                }
+                .play-btn{
+                    a {
+                        font-size: 22   px;
+                        text-decoration: none;
+                        color: #fff;
+                        .Montserrat-Regular;
+                        margin: 10px 0 30px 0;
+                        :hover {
+                            opacity: 0.7;
+                        }
+                        img {
+                            max-width: 50px;
+                        }
+                        p{
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 10px;
+                        }
+                        @media (max-width: 480px) {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .read-btn {
+                    display: inline-block;
+                    padding: 15px 55px;
+                    border: 2px solid #fff;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 24px;
+                    text-decoration: none;
+                    .Montserrat-Regular;
+                    &:hover {
+                        background: #fff;
+                        color: #2D90C1;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        text-align: center;
+        padding: 40px 0;
+        .top-img {
+            width: 100%;
+            img {
+                width: 100%;
+                max-width: 550px;
+                height: auto;
+            }
+        }
+        h3 {
+            .Montserrat-Bold;
+            font-size: 36px;
+            color: #fff;
+            margin: 24px 0;
+            @media (max-width: 480px) {
+                font-size: 30px;
+            }
+        }
+        .desc {
+            .Montserrat-Light;
+            font-size: 28px;
+            margin: 10px;
+            color: #44414e;
+            /* color: #fff; */
+            &.white {
+                color: #fff;
+                margin: 10px 0 30px 0;
+            }
+            @media (max-width: 480px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .fashion {
+        background: url(imgs/yellowbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+    }
+    .shopaholic {
+        background: url(imgs/tealbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+    }
+    .smart {
+        background: url(imgs/greenbg.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .app-store {
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 30px 10px;
+            img {
+                width: 175px;
+                height: 54px;
+                @media (max-width: 480px) {
+                    width: 130px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .social-icon {
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 20px 5px;
+            img {
+                width: 35px;
+                height: 35px;
+                @media (max-width: 480px) {
+                    width: 28px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .fynd-img {
+        width: 100%;
+        margin: 0 auto 25px auto;
+        img {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            @media (max-width: 480px) {
+                width: 80%;
+            }
+        }
+        .msg-btn {
+            display: inline-block;
+            :hover {
+                opacity: 0.7;
+            }
+        }
+        .logo {
+            width: 100%;
+            max-width: 80px;
+            margin: 0 0 10px 0;
+            &:hover {}
+        }
+    }
+    .download-txt {
+        font-size: 26px;
+        margin: 40px 0 0 0;
+        text-transform: uppercase;
+        .Montserrat-Bold;
+        color: #fff;
+        @media (max-width: 480px) {
+            font-size: 18px;
+        }
+    }
+    .stay-txt {
+        font-size: 22px;
+        color: #fff;
+        .Montserrat-Regular;
+        margin: 10px 0;
+    }
+    .city-img {
+        width: 100%;
+        margin-bottom: -44px;
+        img {
+            width: 100%;
+        }
+    }
+    .copyright {
+        background: #4a4a4a;
+        padding: 30px 0;
+        text-align: center;
+        a {
+            .Montserrat-Light;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: #33B2C1;
+            }
+        }
+    }
+}
+
+@keyframes animated-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -40000px 0;
+    }
+}
